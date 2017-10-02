@@ -1,0 +1,14 @@
+<div class="" ng-controller="MainCntrl as main">
+  <p> {{main.title}}</p>
+  <button class="btn btn-default" ng-click="fetchTeam();">Display Team India</button>
+  <table class="table table-bordered" ng-show="team.length">
+    <thead>
+     <td>Player Name</td> <td>Role </td>
+    </thead>
+    <tbody>
+    <tr ng-repeat='player in team'>
+      <td>{{player.Name}}</td>
+      <td>{{player.Role}}</td>
+    </tbody>
+  </table>
+</div>

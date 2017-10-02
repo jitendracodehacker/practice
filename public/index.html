@@ -6,21 +6,15 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css" />
     </head>
     <body class="container-fluid" ng-app="myApp">
-      <div class="" ng-controller="MainCntrl as main">
-        <p> {{main.title}}</p>
-        <button class="btn btn-default" ng-click="fetchTeam();">Display Team India</button>
-        <table class="table table-bordered" ng-show="team.length">
-          <thead>
-           <td>Player Name</td> <td>Role </td>
-          </thead>
-          <tbody>
-          <tr ng-repeat='player in team'>
-            <td>{{player.Name}}</td>
-            <td>{{player.Role}}</td>
-          </tbody>
-        </div>
+      <nav class="navabar nabbar-inverse navbar-fixed-top" style="background-color:black;">
+        <a ui-sref="home" ui-sref-active="active" class="btn">Home</a>
+        <a ui-sref="about" ui-sref-active="active" class="btn">About</a>
+      </nav>
+      <div>
+        <ui-view></ui-view>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
       <script type="text/javascript" src="/socket.io/socket.io.js"></script>
       <script type="text/javascript" src="app.js"></script>
       <script type="text/javascript" src="services/rest_service.js"></script>
