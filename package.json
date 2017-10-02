@@ -1,0 +1,30 @@
+{
+  "name": "practice",
+  "version": "0.0.1",
+  "description": "This is my first app on gitHub for practice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitendracodehacker/practice.git"
+  },
+  "keywords": [
+    "practice",
+    "sample",
+    "app"
+  ],
+  "author": "Jitendra Chaudhari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jitendracodehacker/practice/issues"
+  },
+  "homepage": "https://github.com/jitendracodehacker/practice#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "nodemon": "^1.12.1",
+    "socket.io": "^2.0.3"
+  }
+}
